@@ -13,7 +13,7 @@ func main() {
 
 	log.Println("Server will start at http://localhost:8080/")
 
-	ConnectDatabase()
+	//ConnectDatabase()
 
 	route := mux.NewRouter()
 
@@ -23,5 +23,5 @@ func main() {
 	//http.HandleFunc("/", RenderHome)
 	//http.HandleFunc("/login", RenderHome)
 	//err := http.ListenAndServeTLS(":8080", "server.crt", "server.key", nil)
-	
+
 }
