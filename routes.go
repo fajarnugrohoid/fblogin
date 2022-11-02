@@ -14,6 +14,8 @@ func AddApproutes(route *mux.Router) {
 	route.HandleFunc("/", RenderHome)
 	route.HandleFunc("/login", RenderHome)
 
+	route.HandleFunc("/profile", RenderProfile)
+
 	route.HandleFunc("/login/facebook", InitFacebookLogin)
 
 	route.HandleFunc("/facebook/callback", HandleFacebookLogin)

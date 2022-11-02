@@ -12,11 +12,6 @@ import (
 	"golang.org/x/oauth2"
 )
 
-// RenderHome Rendering the Home Page
-func RenderHome(response http.ResponseWriter, request *http.Request) {
-	http.ServeFile(response, request, "views/index.html")
-}
-
 // RenderProfile Rendering the ProfileHome Page
 func RenderProfile(response http.ResponseWriter, request *http.Request) {
 	http.ServeFile(response, request, "views/profile.html")
